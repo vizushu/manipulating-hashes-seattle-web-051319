@@ -12,20 +12,21 @@ def first_challenge
       favorite_icecream_flavors: ["strawberry", "cookie dough", "mint chip"]
     }
   }
-
-  
+      contacts.each do |person, data|
+        data.each do |attribute, value|
+          if attribute == :favorite_icecream_flavors
+          value.delete_if do |flavor|
+          flavor == "strawberry"
 
 
   contacts
 end
 
-  contacts.each do |person, data|
-    # ITERATING OVER SECOND LEVEL
-    data.each do |attribute, value|
-      # THIRD LEVEL
-      if attribute == :favorite_icecream_flavors
-        value.delete_if do |flavor|
-          flavor == "strawberry"
+  
+    
+    
+      =
+      
         end
       end
     end
